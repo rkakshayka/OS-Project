@@ -7,8 +7,8 @@
 
 #include "IndianRail.h"
 
-// Count of passenger threads that have completed (i.e. station_wait_for_train
-// has returned) and are awaiting a station_on_board() invocation.
+// Count of passenger threads that have completed 
+//(i.e. station_wait_for_train has returned) and are awaiting a station_on_board() invocation.
 volatile int threads_completed = 0;
 
 void*
@@ -63,8 +63,7 @@ alarm_handler(int foo)
 /*
  * This creates a bunch of threads to simulate arriving trains and passengers.
  */
-int
-main()
+int main()
 {
 	struct station station;
 	station_init(&station);
@@ -135,7 +134,7 @@ main()
 			}
 		}
 
-		// Wait a little bit longer. Give station_load_train() a chance to return
+		// Wait a little bit. Give station_load_train() a chance to return
 		// and ensure that no additional passengers board the train. One second
 		// should be tons of time, but if you're on a horribly overloaded system,
 		// this may need to be tweaked.
