@@ -19,4 +19,4 @@ Ex.- >>  gcc -c filename.c -lpthread
      >>  objdump -D filename.o -lpthread
 ```
                                      
-                                                 ⩜ʞsʜ₳ɣ  ♪  ™ 
+                                                         ⩜ʞsʜ₳ɣ  ♪  ™ 
