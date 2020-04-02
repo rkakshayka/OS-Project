@@ -1,6 +1,6 @@
 IndianRail (Thread Synchronization-Project)
 ======================================
-1. To run this first clone the code in your local VirtualMachine(Linux) as follows: 
+1. To run this first clone the code in your Local or VirtualMachine(Linux) as follows: 
 ```
 git clone https://github.com/rkakshayka/OS-Project.git
 ```
@@ -18,5 +18,6 @@ Note:- if you want to run the '.o' files than use the command
 Ex.- >>  gcc -c filename.c -lpthread
      >>  objdump -D filename.o -lpthread
 ```
-                                     
+                                     ================================================
                                                          ⩜ʞsʜ₳ɣ  ♪  ™ 
+                                     ================================================                    
