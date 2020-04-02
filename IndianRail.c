@@ -1,7 +1,5 @@
 #include <pthread.h>
 #include "IndianRail.h"
-
-
 /**
   Initializes all the mutexes and condition-variables.
 */
@@ -15,11 +13,9 @@ station_init(struct station *station)
   pthread_cond_init(&(station->passengers_seated_cond), NULL);
   pthread_cond_init(&(station->train_is_full_cond), NULL);
 }
-
 /**
 Loads the train with passengers. When a passenger robot arrives in a station, it first invokes this function. 
 The function must not return until the train is satisfactorily loaded.
-Params:
   stattion: current station pointer
   count: indicates how many seats are available on the train
 */
@@ -64,10 +60,8 @@ station_wait_for_train(struct station *station)
 
   pthread_cond_signal(&(station->passengers_seated_cond));
 }
-
 /**
-Use this function to let the train know that it’s on board.
-Params:
+Use this function to let the train know that it’s on board.:
   stattion: current station pointer
 */
 void
@@ -82,3 +76,4 @@ station_on_board(struct station *station)
   if (station->in_passengers == 0)
   	pthread_cond_broadcast(&(station->train_is_full_cond));
 }
+//////////////////////////////////////////////////////////////////////////////////////////////
