@@ -7,17 +7,17 @@ git clone https://github.com/rkakshayka/OS-Project.git
 
 2. Now Compile the code by typing command
 ```
-make
+   make
 ```
 3. Run the program using the command
 ```
-./a.out
+   ./a.out
 ```
 Note:- if you want to run the '.o' files than use the command
 ```
 Ex.- >>  gcc -c filename.c -lpthread
      >>  objdump -D filename.o -lpthread
 ```
-                                     ================================================
-                                                         ⩜ʞsʜ₳ɣ  ♪  ™ 
-                                     ================================================                    
+                                  ===============================================
+                                                     ⩜ʞsʜ₳ɣ  ♪  ™ 
+                                  ===============================================                    
